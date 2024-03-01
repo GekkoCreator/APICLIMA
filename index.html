@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('https://www.mundodeportivo.com/urbantecno/hero/2023/01/Estas-son-algunas-de-las-mejores-webs-para-consultar-el-clima-en-los-proximos-dias.jpg?width=1200&aspect_ratio=16:9'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Clima</h1>
+        <div id="resultado">
+            <p>Agregar la Ciudad</p>
+        </div> 
+        <form id="weatherForm">
+            <div class="input-group">
+                <input type="text" id="city" placeholder="Ciudad" required>
+                <select id="country">
+                    <option disabled selected value="">Elija el país</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CO">Colombia</option>
+                    <option value="MX">México</option>
+                    <option value="PR">Perú</option>
+                    <option value="PT">Puerto Rico</option>
+                    <option value="VZ">Venezuela</option>
+                </select>
+                <button type="submit">Consultar</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <!--<script src="script.js"></script>-->
+    <script src="app.js"></script>
+</body>
+</html>
