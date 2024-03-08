@@ -2,18 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://img.freepik.com/fotos-premium/paisaje-monte-everest-clima-realista-oscuro-fondo-espacio-copia_953680-25048.jpg'); /* Cambia esto por la URL de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con transparencia */
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     text-align: center;
 }
@@ -23,13 +18,14 @@ body {
 }
 
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
+    display: inline-block;
+    width: 80px; /* Ancho fijo para todas las etiquetas */
+    text-align: left;
 }
 
 .input-group input,
 .input-group select {
-    width: 100%;
+    width: calc(100% - 90px); /* Ancho del campo de entrada menos el ancho de la etiqueta */
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
