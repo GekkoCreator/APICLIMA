@@ -47,3 +47,17 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
     
+
+    function mostrarError(mensaje) {
+        weatherInfo.innerHTML = `<p>${mensaje}</p>`;
+    }
+
+    weatherForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const country = countrySelect.value;
+        const city = document.getElementById('city').value;
+        consultarAPI(city, country);
+    });
+});
+
+    
